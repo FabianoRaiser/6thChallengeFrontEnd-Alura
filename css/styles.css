@@ -22,3 +22,39 @@ body {
     background-repeat: no-repeat;
 }
 
+/* BANNER TOPO HOMEPAGE */
+
+.principal__banner-topo {
+    background-image: url(../img/banner-topo-homepage360px.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    color: var(--branco);
+    font-family: var(--fonte-titulos);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 95px 25px;
+}
+
+.banner__titulo {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .principal__banner-topo {
+        background-image: url(../img/banner-topo-homepage768px.png);
+        padding: 105px 110px;
+    }
+    .banner__titulo {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .principal__banner-topo{
+      background-image: url(../img/banner-topo-homepage1440px.png);  
+    } 
+}
+
+/* ------------------------ */
