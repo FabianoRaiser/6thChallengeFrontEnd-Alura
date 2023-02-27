@@ -1,0 +1,129 @@
+.cabecalho {
+    width: 100vw;
+    display: flex;
+    color: var(--branco);
+    background-color: var(--roxo-boreal);
+    justify-content: space-between;
+    align-self: center;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cabecalho {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.cabecalho__logo {
+    width: 233.9px;
+    height: 64px;
+}
+
+@media (min-width: 768px) {
+    .cabecalho__logo {
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cabecalho__logo {
+        margin-top: 0;
+    }
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 60vw;
+    }
+}
+
+.cabecalho__menu-check {
+    display: none;
+}
+
+/* INCONE MENU */
+.cabecalho__menu-hamburger {
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+
+.cabecalho__menu-check:checked~.cabecalho__menu {
+    display: block;
+}
+
+.menu__lista {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--roxo-boreal);
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+    .menu__lista {
+        margin: 32px;
+        gap:32px;
+    }
+}
+
+.menu__item {
+    text-align: center;
+    font-family: var(--fonte-textos);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 8px;
+
+}
+
+@media (min-width: 768px) {
+    .menu__item {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu__item:nth-child(1),
+    .menu__item:nth-child(2),
+    .menu__item:nth-child(3) {
+        border-bottom: 1px solid var(--branco);
+    }
+}
+
+.menu__item>a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+@media (min-width: 768px) {
+    .cabecalho__menu-hamburger {
+        display: none;
+    }
+
+    .menu__lista {
+        flex-direction: row;
+    }
+
+}
