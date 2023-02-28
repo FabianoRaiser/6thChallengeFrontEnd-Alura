@@ -201,6 +201,7 @@ body {
 }
 
 @media (min-width: 1440px) {
+
     .lineup__titulo::before,
     .lineup__titulo::after {
         width: 360px;
@@ -212,7 +213,7 @@ body {
         right: -400px;
     }
 }
- 
+
 .lineup__atracao-principal {
     font-size: 48px;
     font-weight: 800;
@@ -276,3 +277,16 @@ body {
 }
 
 /* ---------------------------- */
+
+/* BANNER BOTTOM */
+
+.principal__banner-bottom {
+    content: "";
+    background-image: url(../img/banner-bottom-homepage.png);
+    mix-blend-mode: multiply;
+    background-size: auto;
+    background-position: 50%;
+    height: 338px;
+}
+
+/* --------------------------- */
