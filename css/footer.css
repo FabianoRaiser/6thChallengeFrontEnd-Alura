@@ -1,7 +1,7 @@
 .rodape {
     background-color: var(--roxo-boreal);
     color: var(--branco);
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100vw;
     font-family: var(--fonte-textos);

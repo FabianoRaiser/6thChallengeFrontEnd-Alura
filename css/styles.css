@@ -7,19 +7,21 @@
     --fonte-titulos: 'Calistoga', cursive;
     --fonte-textos: 'Raleway', sans-serif;
 
-    /* CORES GERAIS */  
+    /* CORES GERAIS */
     --branco: #FFFFFF;
-    
+
     /* TEMA BOREAL */
     --roxo-boreal: #4650BD;
+    --roxo-claro: #606ADA;
     --verde-escuro: #008364;
     --gradiente-boreal: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
-    
+
 }
 
 body {
     background-image: var(--gradiente-boreal);
     background-repeat: no-repeat;
+    color: var(--branco);
 }
 
 /* BANNER TOPO HOMEPAGE */
@@ -46,15 +48,100 @@ body {
         background-image: url(../img/banner-topo-homepage768px.png);
         padding: 105px 110px;
     }
+
     .banner__titulo {
         font-size: 64px;
     }
 }
 
 @media (min-width: 1440px) {
-    .principal__banner-topo{
-      background-image: url(../img/banner-topo-homepage1440px.png);  
-    } 
+    .principal__banner-topo {
+        background-image: url(../img/banner-topo-homepage1440px.png);
+    }
+}
+
+/* ------------------------ */
+
+/* DATAS */
+.principal__datas {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    align-items: center;
+}
+
+.datas__img {
+    margin-bottom: 32px;
+
+    background-image: url(../img/home-datas.avif);
+    width: 312px;
+    height: 381px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: 40%;
+    background-clip: border-box;
+}
+
+@media (min-width: 768px) {
+    .datas__img {
+        width: 609px;
+        height: 381px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .principal__datas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .datas__img {
+        grid-row: 1 / 4;
+        margin-bottom: 0;
+    }
+}
+
+.datas__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--fonte-textos);
+    text-align: center;
+}
+
+.datas__descricao {
+    margin: 24px 0;
+    font-size: 20px;
+    font-family: var(--fonte-textos);
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
+
+.botao__ingressos {
+    font-family: var(--fonte-textos);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    line-height: 40px;
+    color: var(--branco);
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px #000000;
+    ;
+    background-color: var(--roxo-boreal);
+    width: 250px;
+    height: 56px;
+    padding: 8px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.botao__ingressos:hover {
+    background-color: var(--roxo-claro);
 }
 
 /* ------------------------ */
