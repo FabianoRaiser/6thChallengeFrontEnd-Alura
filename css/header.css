@@ -45,7 +45,7 @@
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .cabecalho__menu {
         display: none;
         position: absolute;
@@ -103,7 +103,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .menu__item:nth-child(1),
     .menu__item:nth-child(2),
