@@ -127,3 +127,7 @@
     }
 
 }
+
+.link-atual {
+    text-decoration-line: underline;
+}
