@@ -1,0 +1,104 @@
+/* BANNER TOPO */
+
+.experiencia__topo {
+    background-image: url(../img/banner-topo-experiencia360px.png);
+}
+
+@media (min-width: 768px) {
+    .experiencia__topo {
+        background-image: url(../img/banner-topo-experiencia768px.png);
+    }   
+}
+
+@media (min-width: 1440px) {
+    .experiencia__topo {
+        background-image: url(../img/banner-topo-experiencia1440px.png);
+    }   
+}
+
+/* ----------------------- */
+
+/* CONTEUDO */
+
+.bloco__conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    align-items: center;
+}
+
+.bloco__img {
+    margin-bottom: 32px;
+
+    width: 312px;
+    height: 381px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: 40%;
+    background-clip: border-box;
+}
+
+@media (min-width: 768px) {
+    .bloco__img {
+        width: 609px;
+        height: 381px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .bloco__conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 120px;
+        gap: 48px;
+    }
+
+}
+
+.bloco-top {
+    background-image: url(../img/experiencia-bloco1.jpg);
+}
+
+.bloco-mid {
+    background-image: url(../img/experiencia-bloco2.jpeg);
+}
+
+.bloco-bot {
+    background-image: url(../img/experiencia-bloco3.jpg);
+}
+.bloco__descricao {
+    font-family: var(--fonte-textos);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+    .bloco-mid {
+        grid-area: 1 / 2;
+    }
+
+    .bloco__descricao {
+        text-align: start;
+        gap: 24px;
+    }
+    
+    .descricao-mid {
+        text-align: end;
+    }
+}
+
+.bloco__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.bloco__texto {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* ----------------------- */
