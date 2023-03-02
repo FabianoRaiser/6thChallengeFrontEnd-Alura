@@ -2,6 +2,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./aExperiencia.css);
+@import url(./setores.css);
 
 :root {
     /* FONTES */
@@ -23,6 +24,7 @@ body {
     background-image: var(--gradiente-boreal);
     background-repeat: no-repeat;
     color: var(--branco);
+    font-family: var(--fonte-textos);
 }
 
 /* BANNER TOPO HOMEPAGE */
