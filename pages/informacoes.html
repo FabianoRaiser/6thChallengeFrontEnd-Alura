@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Experiência - CodeChella 2023</title>
+    <title>Informações - CodeChella 2023</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -22,49 +25,42 @@
         </label>
         <nav class="cabecalho__menu">
             <ul class="menu__lista">
-                <ln class="menu__item link-atual"><a href="./AExperiencia.html" class="menu__link">A experiência</a></ln>
+                <ln class="menu__item"><a href="./AExperiencia.html" class="menu__link">A experiência</a>
+                </ln>
                 <ln class="menu__item"><a href="./setores.html" class="menu__link">Mapa de Setores</a></ln>
-                <ln class="menu__item"><a href="./informacoes.html" class="menu__link">Informações</a></ln>
+                <ln class="menu__item link-atual"><a href="./informacoes.html" class="menu__link">Informações</a></ln>
                 <ln class="menu__item"><a href="#" class="menu__link">Ingressos</a></ln>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="principal__banner-topo experiencia__topo">
-            <span class="banner__titulo">A Experiência</span>
+        <section class="principal__banner-topo informacoes__topo">
+            <span class="banner__titulo">Informações Gerais</span>
         </section>
-        <section class="bloco__conteudo">
-            <div class="bloco__img bloco-top"></div>
-            <div class="bloco__descricao">
-                <span class="bloco__titulo">Acessibilidade e Inclusão</span>
-                <p class="bloco__texto">Nosso evento tenta abraçar um público mais amplo em todos os sentidos, de todas
-                    as idades, corpos, gostos e pensamentos! Isso está presente no espaço físico, na sinalização, no
-                    treinamento da equipe de apoio, na comunicação em libras, braile, visual e tátil. Além disso,
-                    dispomos de ingressos gratuitos para pessoas com deficiência e acompanhantes, pessoas idosas e
-                    crianças!</p>
+        <section class="informacoes">
+            <span class="info__titulo">Perguntas Frequentes:</span>
+            <div class="info__card">
+                <div class="info__card-cabecalho"><span class="info__card-pergunta">Quais serão as atrações?</span><i class="fa-solid fa-caret-down drop-down-arrow"></i></div>
+                <p class="info__card-resposta">Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. <a class="link__informacoes">Confira o line-up em detalhes clicando neste link!</a></p>
             </div>
-        </section>
-        <section class="bloco__conteudo">
-            <div class="bloco__img bloco-mid"></div>
-            <div class="bloco__descricao descricao-mid">
-                <span class="bloco__titulo">Sustentabilidade</span>
-                <p class="bloco__texto">Queremos estar aqui celebrando daqui a 50, 100 anos! Por isso, levamos o futuro
-                    do nosso planeta a sério. Nosso festival é carbono zero, com utilização de copos retornáveis, coleta
-                    e destinação adequada de resíduos, e transporte coletivo.</p>
+            <div class="info__card">
+                <div class="info__card-cabecalho"><span class="info__card-pergunta">Quais são os itens proibidos?</span><i class="fa-solid fa-caret-down drop-down-arrow"></i></div>
+                <p class="info__card-resposta hidden"></p>
             </div>
-        </section>
-        <section class="bloco__conteudo">
-            <div class="bloco__img bloco-bot"></div>
-            <div class="bloco__descricao">
-                <span class="bloco__titulo">Atrações</span>
-                <p class="bloco__texto">Intervenções artísticas e culturais para todos os gostos! Durante os intervalos
-                    dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami,
-                    circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros
-                    brinquedos!</p>
+            <div class="info__card">
+                <div class="info__card-cabecalho"><span class="info__card-pergunta">Qual é a classificação etária?</span><i class="fa-solid fa-caret-down drop-down-arrow"></i></div>
+                <p class="info__card-resposta hidden"></p>
+            </div>
+            <div class="info__card">
+                <div class="info__card-cabecalho"><span class="info__card-pergunta">Quais são os setores disponíveis?</span><i class="fa-solid fa-caret-down drop-down-arrow"></i></div>
+                <p class="info__card-resposta hidden"></p>
+            </div>
+            <div class="info__card">
+                <div class="info__card-cabecalho"><span class="info__card-pergunta">Quais são os itens proibidos?</span><i class="fa-solid fa-caret-down drop-down-arrow"></i></div>
+                <p class="info__card-resposta hidden"></p>
             </div>
         </section>
     </main>
-
     <footer class="rodape">
         <img src="../img/Logo-rodape.svg" alt="Logo do CodeChella no rodapé" class="rodape__logo">
         <div class="rodape__redes">
@@ -96,5 +92,3 @@
             comerciais.</span>
     </footer>
 </body>
-
-</html>

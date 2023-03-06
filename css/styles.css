@@ -3,6 +3,7 @@
 @import url(./footer.css);
 @import url(./aExperiencia.css);
 @import url(./setores.css);
+@import url(./informacoes.css);
 
 :root {
     /* FONTES */
@@ -16,6 +17,8 @@
     --roxo-boreal: #4650BD;
     --roxo-claro: #606ADA;
     --verde-escuro: #008364;
+    --azul-claro: #C8DEEF;
+    --cinza: #444444;
     --gradiente-boreal: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
 
 }
@@ -25,6 +28,10 @@ body {
     background-repeat: no-repeat;
     color: var(--branco);
     font-family: var(--fonte-textos);
+}
+
+.hidden {
+    display: none;
 }
 
 /* BANNER TOPO HOMEPAGE */

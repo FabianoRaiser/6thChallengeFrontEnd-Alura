@@ -1,0 +1,60 @@
+.informacoes__topo {
+    background-image: url(../img/banner-topo-informacoes360px.png);
+}
+
+@media (min-width: 768px) {
+    .informacoes__topo {
+        background-image: url(../img/banner-topo-informacoes768px.png);
+    }
+}
+
+@media (min-width: 1440px) {
+    .informacoes__topo {
+        background-image: url(../img/banner-topo-informacoes1440px.png);
+        background-position: 100%;
+    }
+}
+
+.informacoes {
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__titulo {
+    font-family: var(--fonte-titulos);
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.info__card {
+    margin-bottom: 8px;
+}
+
+.info__card-cabecalho {
+    background-color: var(--roxo-boreal);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.info__card-pergunta {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.info__card-resposta {
+    background-color: var(--azul-claro);
+    color: var(--cinza);
+    padding: 16px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.drop-down-arrow {
+    font-size: 32px;
+    
+}
