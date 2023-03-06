@@ -21,6 +21,18 @@
     flex-direction: column;
 }
 
+@media (min-width: 768px) {
+    .informacoes {
+        padding: 48px 60px;
+    }   
+}
+
+@media (min-width: 1440px) {
+    .informacoes {
+        padding: 48px 220px;
+    }
+}
+
 .info__titulo {
     font-family: var(--fonte-titulos);
     font-weight: 400;
@@ -37,7 +49,7 @@
     background-color: var(--roxo-boreal);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 16px;
 }
 
