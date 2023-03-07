@@ -4,6 +4,7 @@
 @import url(./aExperiencia.css);
 @import url(./setores.css);
 @import url(./informacoes.css);
+@import url(./ingressoForm.css);
 
 :root {
     /* FONTES */
@@ -160,6 +161,11 @@ body {
 
 .botao__ingressos:hover {
     background-color: var(--roxo-claro);
+}
+
+.botao__ingressos > a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* ------------------------ */
