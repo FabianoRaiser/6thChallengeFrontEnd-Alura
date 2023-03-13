@@ -51,6 +51,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    cursor: pointer;
 }
 
 .info__card-pergunta {
@@ -61,12 +62,17 @@
 .info__card-resposta {
     background-color: var(--azul-claro);
     color: var(--cinza);
-    padding: 16px;
+    padding: 0 16px;
     font-size: 20px;
     line-height: 40px;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 .drop-down-arrow {
     font-size: 32px;
     
 }
+
