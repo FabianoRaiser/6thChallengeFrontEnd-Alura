@@ -8,7 +8,7 @@ arccordionCabecalho.forEach(cabecalho => {
         if (cabecalho.classList.contains('ativo')) {
             arccordionResposta.style.maxHeight = arccordionResposta.scrollHeight + 'px';
         } else {
-            arccordionResposta.style.maxHeight = 0;   
+            arccordionResposta.style.maxHeight = 0;
         }
         
         const index = Array.from(arccordionCabecalho).indexOf(cabecalho)
@@ -17,5 +17,3 @@ arccordionCabecalho.forEach(cabecalho => {
 
     })
 })
-
-

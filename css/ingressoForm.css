@@ -108,3 +108,31 @@
         justify-self: center;
     }
 }
+
+.mensagem__erro {
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.formulario__botao {
+    font-family: var(--fonte-textos);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    line-height: 40px;
+    color: var(--branco);
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px #000000;
+    ;
+    background-color: var(--roxo-boreal);
+    width: min-content;
+    height: 56px;
+    padding: 8px 16px;
+
+    align-self: center;
+
+    grid-column: span 2;
+    justify-self: center;
+}

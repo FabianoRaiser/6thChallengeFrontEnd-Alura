@@ -32,10 +32,6 @@ body {
     font-family: var(--fonte-textos);
 }
 
-.hidden {
-    display: none;
-}
-
 /* BANNER TOPO HOMEPAGE */
 
 .principal__banner-topo {
