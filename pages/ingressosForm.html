@@ -25,11 +25,11 @@
         </label>
         <nav class="cabecalho__menu">
             <ul class="menu__lista">
-                <ln class="menu__item"><a href="./AExperiencia.html" class="menu__link">A experiência</a>
-                </ln>
-                <ln class="menu__item"><a href="./setores.html" class="menu__link">Mapa de Setores</a></ln>
-                <ln class="menu__item"><a href="./informacoes.html" class="menu__link">Informações</a></ln>
-                <ln class="menu__item link-atual"><a href="./ingressosForm.html" class="menu__link">Ingressos</a></ln>
+                <li class="menu__item"><a href="./AExperiencia.html" class="menu__link">A experiência</a>
+                </li>
+                <li class="menu__item"><a href="./setores.html" class="menu__link">Mapa de Setores</a></li>
+                <li class="menu__item"><a href="./informacoes.html" class="menu__link">Informações</a></li>
+                <li class="menu__item link-atual"><a href="./ingressosForm.html" class="menu__link">Ingressos</a></li>
             </ul>
         </nav>
     </header>
@@ -37,21 +37,34 @@
         <section class="principal__banner-topo ingressos__topo">
             <h1 class="banner__titulo">Garanta seu Ingresso</h1>
         </section>
-        <form action="" class="ingressos__formulario">
+        <form class="ingressos__formulario" data-formulario>
             <h2 class="ingressos__titulo">Preencha o formulário a seguir:</h2>
-            <div class="form__bloco"><label for="nomeIngresso" class="form__label">Nome Completo:</label><input
-                    name="nome" type="text" id="nomeIngresso"></div>
-            <div class="form__bloco"><label for="emailIngresso" class="form__label">Email:</label><input name="email"
-                    type="email" id="emailIngresso"></div>
-            <div class="form__bloco"><label for="tipoIngresso" class="form__label">Tipo de Ingresso</label><select
-                    name="tipoIngresso" id="tipoIngresso">
+            <fieldset class="form__bloco">
+                <label for="nomeIngresso" class="form__label">Nome Completo:</label>
+                <input name="nome" type="text" id="nomeIngresso" required minlength="3">
+                <span class="mensagem__erro"></span>
+            </fieldset>
+            <fieldset class="form__bloco">
+                <label for="emailIngresso" class="form__label">Email:</label>
+                <input name="email" type="email" id="emailIngresso" required minlength="4">
+                <span class="mensagem__erro"></span>
+            </fieldset>
+            <fieldset class="form__bloco">
+                <label for="tipoIngresso" class="form__label">Tipo de Ingresso</label>
+                <select name="tipo" id="tipoIngresso" required>
                     <option value="">Tipo de Ingresso</option>
-                    <option value="meiaEntrada"></option>
-                    <option value="entradaNormal"></option>
-                </select></div>
-            <div class="form__bloco"><label for="dataNascimento" class="form__label">Data de Nascimento</label><input
-                    name="dataNascimento" type="date" id="dataNascimento"></div>
-            <button class="botao__ingressos" id="form__btn">Avançar! <i class="fa-solid fa-arrow-right"></i></button>
+                    <option value="Meia-Entrada">Meia-entrada</option>
+                    <option value="Inteira">Inteira</option>
+                    <option value="Inteira Cortesia">Inteira Cortesia</option>
+                </select>
+                <span class="mensagem__erro"></span>
+            </fieldset>
+            <fieldset class="form__bloco">
+                <label for="dataNascimento" class="form__label">Data de Nascimento</label>
+                <input name="dataNascimento" type="date" id="dataNascimento" required>
+                <span class="mensagem__erro"></span>
+            </fieldset>
+            <input value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
         </form>
     </main>
     <footer class="rodape">
@@ -59,31 +72,33 @@
         <div class="rodape__redes">
             <span class="rodape__redes-titulo">Acesse nossas redes:</span>
             <ul class="rodape__redes-icones">
-                <ln class="rodape__redes-itens">
+                <li class="rodape__redes-itens">
                     <a href="#" class="rodape__link">
                         <img src="../img/rodape-whats.svg" alt="Imagem link para o whatsapp">
                     </a>
-                </ln>
-                <ln class="rodape__redes-itens">
+                </li>
+                <li class="rodape__redes-itens">
                     <a href="#" class="rodape__link">
                         <img src="../img/rodape-twitch.svg" alt="Imagem link para a twitch">
                     </a>
-                </ln>
-                <ln class="rodape__redes-itens">
+                </li>
+                <li class="rodape__redes-itens">
                     <a href="#" class="rodape__link">
                         <img src="../img/rodape-insta.svg" alt="Imagem link para o Instagram">
                     </a>
-                </ln>
-                <ln class="rodape__redes-itens">
+                </li>
+                <li class="rodape__redes-itens">
                     <a href="#" class="rodape__link">
                         <img src="../img/rodape-twitter.svg" alt="Imagem link para o twitter">
                     </a>
-                </ln>
+                </li>
             </ul>
         </div>
         <p class="rodape__creditos">Desenvolvido por Alura e executado por Fabiano Raiser. Projeto fictício sem fins
             comerciais.</p>
     </footer>
+
+    <script src="../js/validacoes/validacoes.js" type="module"></script>
 </body>
 
 </html>
