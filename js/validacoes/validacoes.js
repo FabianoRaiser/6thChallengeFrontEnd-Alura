@@ -10,6 +10,8 @@ formulario.addEventListener("submit", (e) => {
         "nome": e.target.elements["nome"].value,
         "email": e.target.elements["email"].value,
         "tipo": e.target.elements["tipo"].value,
+        "setor": e.target.elements["setor"].value,
+        "diaEvento": e.target.elements["diaEvento"].value,
         "dataNascimento": e.target.elements["dataNascimento"].value
     }
 
@@ -49,6 +51,12 @@ const mensagens = {
     },
     tipo: {
         valueMissing: "Por favor, escolha seu tipo de Ingresso."
+    },
+    setor: {
+        valueMissing: "Por favor, escolha o setor."
+    },
+    diaEvento: {
+        valueMissing: "Por favor, escolha o dia do evento."
     }
 }
 
